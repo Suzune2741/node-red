@@ -1,5 +1,106 @@
-#### 4.1.2: Maintenance Release
+#### 4.1.10: Maintenance Release
 
+ - Ensure project files are inside project root path (#5724) @knolleary
+ - Fix module name validation for uninstall and tgz install (#5722) @knolleary
+
+#### 4.1.9: Maintenance Release
+
+ - Update "use-tls" translations to indicate that a custom cert is used (#5685) @tobias47n9e
+ - Indicate that "use-tls" label is using a custom config (#5665) @tobias47n9e
+ - Bump dependencies for 4.1.9 release (#5663) @knolleary
+ - Bundle npm to enable cross-platform module management (#5662) @knolleary
+ - Replace uuid library with native function crypto.randomUUID (#5660) @hlovdal
+ - Ensure tcp-request doesn't reuse uncloned msg objects (#5612) @hardillb
+ - Ensure custom subflow colors override theme overrides (#5599) @knolleary
+ - Handle invalid theme regex (#5598) @knolleary
+ - Allow a nodes defaults to be overridden by settings.js file (#5591) @dceejay
+ - Fix reinitializing server with custom node (#5596) @tobias47n9e
+ - Update config sidebar id handling (#5597) @knolleary
+ 
+#### 4.1.8: Maintenance Release
+
+ - Add badges to func node tabs with code in (#5585) @knolleary
+ - Fix typo in French link node description (#5530) @LPe7
+ - Encode branch name in delete request (#5584) @knolleary
+ - Introduce `show-first-tab` and `show-last-tab` actions (#5583) @GogoVega
+ - Fix "connected to ..." log string in tcp in/out nodes using TLS (#5484) @marcows
+ - TreeList: Fix arrow navigation through filtered TreeList (#5431) @piotrbogun
+ - Update tar dependency (#5582) @knolleary
+ - Allow Node-RED section of help sidebar to be hidden (#5581) @knolleary
+ - Allow theme plugin to override settings and add menu options (#5580) @knolleary
+
+#### 4.1.7: Maintenance Release
+
+ - Do not block touch events on ports (#5527) @knolleary
+ - Allow palette.categories to be set via theme plugin (#5526) @knolleary
+ - Bump i18next version (#5519) @knolleary
+ - Suppress i18n notice in frontend (#5528) @knolleary
+ - Set showSupportNotice option on i18n (#5520) @knolleary
+ - Do not cache subflow colors as each subflow can have its own (#5518) @knolleary
+ - Update tar/multer deps (#5515) @knolleary
+ - Remove IE7 CSS hacks (#5511) @bonanitech
+ 
+#### 4.1.6: Maintenance Release
+
+ - Allow palette.theme to be set via theme plugin and include icons (#5500) @knolleary
+ - Ensure config sidebar tooltip handles html content (#5501) @knolleary
+ - Allow node-red integrator access to available updates (#5499) @Steve-Mcl
+ - Add frontend pre and post debug message hooks (#5495) @Steve-Mcl
+ - Fix: allow middle-click panning over links and ports (#5496) @lklivingstone
+ - Support ctrl key to select configuration nodes (#5486) @kazuhitoyokoi
+ - Add § as shortcut meta-key (#5482) @gorenje
+ - Update dependencies (#5502) @knolleary
+
+#### 4.1.5: Maintenance Release
+
+ - chore: bump tar to 7.5.7 (#5472) @bryopsida
+ - Update node-red-admin dependency @knolleary
+
+#### 4.1.4: Maintenance Release
+
+ - Update tar dependency @knolleary
+ - Revert overflow fix in editableList (#5467) @knolleary
+ - registry: fix importModule base dir for exports subpaths (#5465) @yuan-cloud
+ - fix: prevent race condition in localfilesystem context store during shutdown (#5462) @Dennis-SEG
+ - fix: prevent double resolve in node close callback (#5461) @Dennis-SEG
+ - fix: prevent incorrect array modification in delay node (#5457) @Dennis-SEG
+ - fix: prevent uncaught exceptions in core node event handlers (#5438) @Dennis-SEG
+
+#### 4.1.3: Maintenance Release
+
+Editor
+
+ - 5343/Editor/Bug: Node help tab resets focus when arrow keys are used to switch between nodes (#5406) @piotrbogun
+ - Ensure quick-add filter is applied properly when retriggering add (#5427) @knolleary
+ - TreeList: Fix widget treeList keyboard navigation scroll behavior (#5421) @piotrbogun
+ - Editor: Flow & subflow names are changed to all lowercase in search dialog #5348 (#5401) @n-lark
+ - Allow actions show-next-tab and previous to loop (#5355) @GogoVega
+ - 5404/Editor/Bug: Junction error in Quick Add dialog (#5407) @piotrbogun
+ - Add tooltip to delete button in node property UI (#5410) @kazuhitoyokoi
+ - Fix invalid node size in quick add dialog (#5403) @kazuhitoyokoi
+ - Expand folder to avoid error in library (#5399) @kazuhitoyokoi
+ - Stricter validator for flow file name in project feature (#5398) @kazuhitoyokoi
+ - Fix size and scrolling in Git config UI (#5396) @kazuhitoyokoi
+ - Reveal node in search results via mouseover (#5368) @gorenje
+
+Runtime
+
+ - Add package-lock.json for reproducible dependency chains (#5426) @dimitrieh
+ - Readme markdown refactor for legibility in IDE's (#5423) @dimitrieh
+ - Update body-parser (#5418) @knolleary
+
+Nodes
+
+ - fix(http-request): prevent uncaught exceptions in async hooks (#5392) @Dennis-SEG
+ - Fix flushing when in variable delay mode (#5382) @dceejay
+ - File node TypedInput width fix (#5425) @knolleary
+ - Use TextDecoder() to decode UTF-8 characters (#5416) @kazuhitoyokoi
+ - Support source information in complete node (#5414) @kazuhitoyokoi
+ - Fix status node to retrieve status from all nodes (#5412) @kazuhitoyokoi
+ - Decrement count of http requests after error (#5409) @kazuhitoyokoi
+ - Fix debug tab to copy displayed value (#5400) @kazuhitoyokoi
+
+#### 4.1.2: Maintenance Release
 
 Editor
 
